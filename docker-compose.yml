@@ -9,3 +9,5 @@ services:
     entrypoint: mix
     volumes:
       - .:/app
+    env_file:
+      - ./.env
