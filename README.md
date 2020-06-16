@@ -1,21 +1,28 @@
 # App
 
-**TODO: Add description**
+Prototipo de bot para telegram
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `app` to your list of dependencies in `mix.exs`:
+Creamos fichero de variable de entorno
 
-```elixir
-def deps do
-  [
-    {:app, "~> 0.1.0"}
-  ]
-end
+```bash
+  touch .env
+```
+
+Añadimos TOKEN_TG="token_bot" y NAME_BOT="nombre_bot"
+
+```bash
+  docker-compose build
+```
+
+Instalamos dependencias e iniciamos el bot
+
+```bash
+  docker-compose run elixir deps.get
+  docker-compose run elixir run --no-halt
 ```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/app](https://hexdocs.pm/app).
-

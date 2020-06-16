@@ -1,6 +1,9 @@
 FROM elixir:latest
 ENV DEBIAN_FRONTEND=noninteractive
 
+RUN mkdir /app
+WORKDIR /app
+
 # Install hex
 RUN mix local.hex --force
 
