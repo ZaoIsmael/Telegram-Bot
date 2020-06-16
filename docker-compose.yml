@@ -1,0 +1,11 @@
+# Version of docker-compose
+version: "3"
+
+# Containers we are going to run
+services:
+  elixir:
+    build:
+      context: .
+    entrypoint: mix
+    volumes:
+      - .:/app
